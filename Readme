@@ -1,1 +1,39 @@
-Add insctructions here
+# Sensor Placement Optimization
+Reproduction project for ECE289Q – Modeling & Optimization for Computer Engineering (UC Davis).
+
+This repository contains the MATLAB code used to implement:
+- Data cleaning and preprocessing
+- POD-based reduced-order modeling
+- Gaussian Process spatial covariance modeling
+- Weighted Mutual Information computation
+- Lazy Greedy sensor selection
+- Branch-and-Bound validation
+- RMSE-based reconstruction and visualization
+
+## Requirements
+- MATLAB (tested on R2023b)
+- Statistics & Machine Learning Toolbox
+
+## Setup
+Place the following files in the same folder:
+- main_code.m (included in repo)
+- lab.png (included in repo)
+- pixel_coords.mat (included in repo)
+- data.txt (download from https://db.csail.mit.edu/labdata/labdata.html)
+
+## How to Run
+Option 1: Use "Run Section" in MATLAB to execute step-by-step for structured output.  
+Option 2: Press "Run" in MATLAB to execute the full pipeline at once.
+
+## Output
+The script generates:
+- Mutual Information Pareto frontier
+- Knee point detection
+- RMSE vs. sensor count curves
+- Comparison with PV, UN, and RA methods
+- Sensor placement visualization on the lab map
+
+## Credits
+Dataset: Intel Berkeley Research Lab  
+Course: ECE289Q (UC Davis)  
+Authors: Madhu Challa  & Atharva Harshe
